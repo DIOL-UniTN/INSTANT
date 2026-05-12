@@ -1,0 +1,38 @@
+_target_: main.Main
+
+proj_name: fff_archs
+
+defaults:
+  # Main
+  - _self_
+  - exp: train
+  - model: fff
+  - optim: adam
+  - sched: default
+  - sig_sched: default
+  - loader: mnist
+  - mlflow_exp: train
+  - my_mlflow
+
+seed: 47
+debug_level: 0
+run_name: null
+device: 
+  _target_: torch.device
+  type: cuda
+  index: 0
+
+epochs: 50
+
+## Output dir
+hydra:
+  run:
+    dir: data/${proj_name}_outputs/${exp._target_}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: data/${proj_name}_multirun/${exp._target_}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  job: # squeue
+    name: ${proj_name}_${exp._target_}
+  callbacks:
+    mlflow_to_csv:
+      _target_: main.MLFlowToCSV
+      exp: ${mlflow.exp}

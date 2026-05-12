@@ -1,0 +1,9 @@
+_target_: loaders.HARLoader
+
+batch_size: 512
+
+normalize: null
+
+debug_level: ${debug_level}
+
+ltarget_transform: null

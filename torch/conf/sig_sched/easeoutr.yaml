@@ -1,0 +1,10 @@
+_target_: utils.fff.ASigmoidSchedEaseOutRestart
+_partial_: True
+
+temp: 2.0
+epochs: ${epochs}
+restart_epoch: 10
+warmup: 
+  _target_: utils.fff.WarmUp
+  epochs: ${epochs}
+warmup_rate: 0.0

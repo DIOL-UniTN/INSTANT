@@ -1,0 +1,3 @@
+_target_: experiments.TrainingFF
+width: 32
+mlflow_id: 11

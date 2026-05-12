@@ -1,0 +1,5 @@
+r
+loadbin bin/main.bin, 0x00018000
+r
+g
+q

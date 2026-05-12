@@ -1,0 +1,9 @@
+_target_: utils.fff.ASigmoidSchedEaseIn
+_partial_: True
+
+temp: 2.0
+epochs: ${epochs}
+warmup: 
+  _target_: utils.fff.WarmUp
+  epochs: ${epochs}
+warmup_rate: 0.1

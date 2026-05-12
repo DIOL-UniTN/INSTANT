@@ -1,0 +1,10 @@
+_target_: loaders.HARLoader
+_partial_: True
+
+batch_size: 512
+
+normalize: null
+
+debug_level: ${debug_level}
+
+ltarget_transform: null

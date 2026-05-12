@@ -1,0 +1,2 @@
+#define IN_FEATURES 761
+#define OUT_FEATURES 10

@@ -1,0 +1,26 @@
+[ # different configurations
+  [ # in*4
+    null, # depth 1
+    68365d1b619c4005a64bf8d35626622f,
+    null,
+    null,
+  ],
+  [ # in/4
+    null,
+    6ec1815d7359416c8357be7919dbc00a,
+    null,
+    null,
+  ],
+  [ # in*16
+    null,
+    0cd785da79fa4f2ba0363aabbbd9d5c9, # 16
+    null,
+    null,
+  ],
+  [ # in*49
+    null,
+    918cca6f4e2a4e0f92e2a06c7f67cbb3, # 49
+    null,
+    null,
+  ],
+]

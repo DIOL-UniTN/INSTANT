@@ -1,0 +1,3 @@
+_target_: models.simple_dla.SimpleDLA
+_partial_: True 
+

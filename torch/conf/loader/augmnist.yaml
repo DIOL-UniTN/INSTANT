@@ -1,0 +1,25 @@
+_target_: loaders.MNISTLoader
+
+batch_size: 512
+debug_level: ${debug_level}
+
+aug_prob: 0.5
+
+transform:
+  - _target_: torchvision.transforms.ToTensor
+
+  - _target_: torchvision.transforms.Normalize
+    mean: [0.1307, ]
+    std: [0.3801, ]
+
+aug:
+  - _target_: torchvision.transforms.RandomApply
+    transforms:
+      - _target_: torchvision.transforms.RandomCrop
+        padding: 8
+        size: [28, 28]
+
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: [-45, 45]
+    p: ${loader.aug_prob}
+ltarget_transform: null

@@ -1,0 +1,31 @@
+mlflow_exps:
+  train:
+    [ # Training
+      null, # depth 1
+      f92bf38578b14f97b098d7a996fd8527,
+      null,
+      null,
+    ],
+  [ # uncertainity_sample_loss
+    null, # depth 1
+    61cf4dbce660479494a2a9a5c8ac1de6,
+    null,
+    null,
+  ], 
+  lossmix: [
+  [ # in*4
+    null, # depth 0
+    68365d1b619c4005a64bf8d35626622f,
+    null,
+    null,
+  ]
+  [ # in/4
+    null,
+    6ec1815d7359416c8357be7919dbc00a,
+    null,
+    null,
+    null,
+  ]
+]
+
+]

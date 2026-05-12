@@ -1,0 +1,9 @@
+_target_: utils.fff.ASigmoidSchedLinear
+_partial_: True
+
+temp: 0.0
+warmup: 
+  _target_: utils.fff.WarmUp
+  epochs: ${epochs}
+warmup_rate: 1.0
+epochs: ${epochs}

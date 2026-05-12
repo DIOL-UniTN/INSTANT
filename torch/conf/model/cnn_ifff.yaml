@@ -1,0 +1,8 @@
+_target_: models.cnn_ifff.CNNIFFF
+_partial_: True # in_channels, num_classes (out_dim), image_size (in_hxw[0] or in_hxw) / before
+
+scale: 8
+leaf_width: 16
+depth: 2
+sig_alpha: 1.0
+inf_sig_alpha: 32.0

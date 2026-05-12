@@ -1,0 +1,5 @@
+_target_: experiments.ModelToC
+
+model_file: data/pretrained_models/ff/mnist.pt
+in_file: data/model_inout/in_7.pt
+out_file: data/model_inout/out_7.pt

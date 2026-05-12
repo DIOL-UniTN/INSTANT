@@ -1,0 +1,14 @@
+_target_: loaders.MNISTSubsetLoader
+
+batch_size: 512
+debug_level: ${debug_level}
+
+transform:
+  - _target_: torchvision.transforms.ToTensor
+
+  - _target_: torchvision.transforms.Normalize
+    mean: [0.1307, ]
+    std: [0.3801, ]
+
+aug_prob: 0.0
+aug: [ ]

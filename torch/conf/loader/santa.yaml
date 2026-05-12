@@ -1,0 +1,5 @@
+_target_: loaders.SANTALoader
+
+batch_size: 512
+
+debug_level: ${debug_level}

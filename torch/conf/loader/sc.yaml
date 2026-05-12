@@ -1,0 +1,18 @@
+_target_: loaders.SCLoader
+
+size: 0 # 0: tiny (12), 1: medium (24), 2: full (36)
+sample_rate: 16000
+batch_size: 512
+debug_level: ${debug_level}
+
+feature:
+  _target_: torchaudio.transforms.MFCC
+  n_mfcc: 13
+  sample_rate: 16000
+  melkwargs:
+    n_mels: 64
+    n_fft: 400 # n_fft/win_len
+    norm: null
+    hop_length: 256 # hop_len
+    center: False
+  log_mels: True

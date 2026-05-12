@@ -1,0 +1,10 @@
+_target_: utils.fff.ASigmoidSchedCosineAnnealing
+_partial_: True
+
+T_max: 10
+eta_min: 0.001
+warmup: 
+  _target_: utils.fff.WarmUp
+  epochs: ${epochs}
+warmup_rate: 1.0
+epochs: ${epochs}

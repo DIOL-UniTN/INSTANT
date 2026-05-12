@@ -1,0 +1,20 @@
+_target_: loaders.hagrid.HAGRIDLoader
+
+batch_size: 512
+debug_level: ${debug_level}
+
+transforms:
+  - _target_: albumentations.LongestMaxSize
+    max_size: 224
+    p: 1
+  - _target_: albumentations.PadIfNeeded
+    min_height: 224
+    min_width: 224
+    value: [144,144,144]
+    border_mode: 0
+    p: 1
+  - _target_: albumentations.Normalize
+    mean: [0.54, 0.499, 0.474]
+    std: [0.234, 0.235, 0.231]
+    max_pixel_value: 255.0
+    p: 1

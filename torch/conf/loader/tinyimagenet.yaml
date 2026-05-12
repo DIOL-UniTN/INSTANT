@@ -1,0 +1,9 @@
+_target_: loaders.tinyimagenet.TinyImageNetLoader
+
+batch_size: 128
+num_workers: 8
+
+normalize:
+  _target_: torchvision.transforms.Normalize
+  mean: [0.4802, 0.4481, 0.3975]
+  std: [0.2302, 0.2265, 0.2262]

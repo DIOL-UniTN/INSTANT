@@ -1,0 +1,4 @@
+_target_: experiments.ATraining
+
+mlflow_id: 4
+entropy_effect: 0.0

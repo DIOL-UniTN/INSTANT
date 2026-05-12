@@ -1,0 +1,70 @@
+log: certainty_score
+
+mnist: [
+[
+  null, # depth 1
+  195a7e43b929487d949eb13ffb6fab47,
+  null,
+  null,
+],
+# INFA
+[
+  null, # depth 1
+  f3a45318e34c4e8d97da14f095e2d842,
+  null,
+  null,
+],
+# ASIGMOID
+[
+  null, # depth 1
+  null,
+  null,
+  null,
+]
+]
+
+har: [
+[
+  null, # depth 1
+  c6d5c848c7ef4fd799c026ca807feae5,
+  null,
+  null,
+],
+# INFA
+[
+  null, # depth 1
+  null,
+  null,
+  null,
+],
+# ASIGMOID
+[
+  null, # depth 1
+  null,
+  null,
+  null,
+]
+]
+
+sc: [
+[
+  null, # depth 1
+  6db445c9b36340b181292eef14dfed5f,
+  null,
+  null,
+],
+# INFA
+[
+  null, # depth 1
+  null,
+  null,
+  null,
+],
+# ASIGMOID
+[
+  null, # depth 1
+  null,
+  null,
+  null,
+]
+]
