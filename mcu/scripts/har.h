@@ -1,2 +1,0 @@
-#define IN_FEATURES 300
-#define OUT_FEATURES 10
